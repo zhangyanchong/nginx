@@ -27,7 +27,9 @@ server {
 
 第一步
 安装htpasswd
-htpasswd是Apache密码生成工具，Nginx支持auth_basic认证，因此我门可以将生成的密码用于Nginx中，输入一行命令即可安装：yum -y install httpd-tools ，参数如下：
+htpasswd是Apache密码生成工具，Nginx支持auth_basic认证，
+因此我门可以将生成的密码用于Nginx中，输入一行命令即可安装：yum -y install httpd-tools ，
+参数如下：
 -c 创建passwdfile.如果passwdfile 已经存在,那么它会重新写入并删去原有内容.
 -n 不更新passwordfile，直接显示密码
 -m 使用MD5加密（默认）
