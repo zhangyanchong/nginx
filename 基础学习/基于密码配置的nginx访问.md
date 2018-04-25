@@ -42,9 +42,7 @@ htpasswd是Apache密码生成工具，Nginx支持auth_basic认证，因此我门
 htpasswd  -m  /www/nginx/conf/vhosts/chongpwd.db   chong    
 
 第三步 访问站点
- 
+</pre></code>
 ![1](https://github.com/zhangyanchong/nginx/blob/master/img/nginx_basic_1.png)
 
 
-
-</pre></code>
