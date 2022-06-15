@@ -37,13 +37,15 @@ web服务器每次请求接口，需要加上api域名和api目录 如：http://
 接口服务器不用任何操作nginx配置，只需要操作web服务器的nginx配置 
  第一种  
  web服务器nginx配置加入
-```  location ^~ /api/
+```
+  location ^~ /api/
    {
     proxy_pass http://api.nbsay.cn/;
    } 
 ```  
   宝塔的完成的配置文件
-```      location ^~ /api/
+```   
+   location ^~ /api/
     {
         proxy_pass http://xs.nbsay.cn/;
         proxy_set_header Host xs.nbsay.cn;
